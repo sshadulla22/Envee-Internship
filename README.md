@@ -5,10 +5,7 @@
   Showcasing the launch of <b>BULL 007</b> with online booking & modern design.
 </p>
 
-<p align="center" border="2>
-  <a href="https://envee-intern.netlify.app" target="_blank">
-  </a>
-</p>
+<p align="center"> <a href="https://envee-intern.netlify.app" target="_blank"> 🌐 Visit Website </a> </p>
 
 
 ---
@@ -56,6 +53,7 @@
   <a href="https://www.linkedin.com/in/sshadulla22" target="_blank">💼 LinkedIn</a> •
   <a href="https://github.com/sshadulla22" target="_blank">👨‍💻 GitHub</a>
 </p>
+
 
 
 
