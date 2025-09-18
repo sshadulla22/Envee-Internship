@@ -38,21 +38,10 @@
 - 🎯 Enhanced brand visibility via social media management.  
 - 🖌️ Designed marketing content using **Figma** & **Canva**.  
 
----
 
-## 📷 Preview
-<p align="center">
-  <img src="https://via.placeholder.com/800x400?text=Envee+Wheels+Homepage" alt="Homepage Preview" />
-</p>
 
----
 
-## 👨‍💻 Author
-**Shadulla Shaikh**  
-<p>
-  <a href="https://www.linkedin.com/in/sshadulla22" target="_blank">💼 LinkedIn</a> •
-  <a href="https://github.com/sshadulla22" target="_blank">👨‍💻 GitHub</a>
-</p>
+
 
 
 
