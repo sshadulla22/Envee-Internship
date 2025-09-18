@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://kit.fontawesome.com/b23e0e833a.js" crossorigin="anonymous"></script>
+ <title> Envee Wheels Limited</title>
+</head>
+<body>
+ <!-- component -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+  <div class="w-full text-gray-700  bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div class="flex flex-row items-center justify-between p-4">
+        <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="h-16 w-auto" src="./assets/ev.png" alt=""></a>
+        <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-500 focus:outline-none focus:shadow-outline" href="./index.html">Home</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./about.html">About us</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./models.html">Models</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./R&D.html">R & D</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./booknow/index2.html">Book Now</a> 
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./dist.html">Partner with us</a>  
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./c.html">Contact Us</a> 
+        
+          
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="flex  bg-cover " style="background-image:url(assets/dealership/hero3.png) ; width: 100%; height: 600px;">
+  <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+      <div>
+          <h2 class="text-4xl font-mono font-semibold text-white md:text-4xl">Unleash the Power of <span class="text-green-700">Ev</span></h2>
+          <!-- <h3 class="mt-2 text-3xl   text-gray-500 ">BULL 007</h3> -->
+          <div class="flex jusitfy-between flex-col lg:flex-row items-center mt-2  space-y-4 lg:space-y-0 lg:space-x-4 xl:space-x-8">
+            <div class="w-full">
+              <button class="focus:outline-none rounded focus:ring-gray-800 focus:ring-offset-2 focus:ring-2 text-gray-800 dark:text-white text-white w-full tracking-tight py-4 text-lg leading-4 hover:bg-gray-300 hover:text-gray-800  bg-white border border-gray-800 dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-gray-800 dark:hover:text-white"><a href='dist.html'>Apply for Dealership</a></button>
+            </div>
+            <div class="w-full">
+              <button class="focus:outline-none rounded focus:ring-green-700 focus:ring-offset-2 focus:ring-2 text-white w-full tracking-tight py-4 text-lg leading-4 hover:bg-green-900 bg-green-700 border border-green-700    dark:hover:text-white "><a href='./booknow/index.html'>Book Now</a></button>
+            </div>
+          </div>
+      </div>
+  </div>
+ 
+</div>
+
+
+  
+
+<!-- <div class="bg-gray-100"> -->
+<div class=" mt-10 w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mx-auto">
+  <h1 class="font-light font-mono text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl text-center text-black  leading-7 md:leading-10">
+    India’s Most Economical <span class="text-green-700">Electric Bike</span>
+     is Here, Reaching to your City very soon.</h1>
+ 
+</div>
+<!-- </div> -->
+
+<section id="main">
+  <div class="m-5 py-8 bg-white">  
+    <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+         
+          <div class="md:7/12  lg:w-6/12">
+            <h2 class="text-2xl text-green-900 hover:animate-bounce pt-2 font-semibold font-mono md:text-4xl">Who we are</h2>
+            <p class="mt-6 text-gray-800 font-mono " >Founded in 2016 , Envee Wheels Limited is one of the leading manufacturers of world class electric two wheelers in India.
+            </p>
+            <p class="mt-4 text-gray-800 font-mono ">Manufacturing PRIDE, India’s FIRST Government approved 72V electric scooter in non RTO & Non registered category.
+            </p>
+            <p class="mt-4 text-gray-800 font-mono  ">We are 100% Indian enterprise with our own in house R&D team with international collaborations with researchers from Australia, Denmark and UK working rigorously toward developing path breaking  innovations in EV Industry.  
+            </p>
+            <br>
+            <button class="px-5 focus:outline-none rounded focus:ring-green-700 focus:ring-offset-2 focus:ring-2 text-white  tracking-tight py-4 text-lg leading-4 hover:bg-green-900 bg-green-700 border border-green-700    dark:hover:text-white"><a href='about.html'>About Us </a></button>
+          </div>
+          
+          <div class="md:5/12 lg:w-5/12">
+            <img src="./assets/Pride Lite Banner.jpg" alt="image"  width="" height="">
+          </div>
+        </div>
+    </div>
+  </div>
+  </section> 
+
+
+
+  <div class=" m-5 py-2 bg-white ">  
+    <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+         <div class="md:5/12 lg:w-5/12 hover:drop-shadow-[0_10px_30px_rgba(255,94,0,0.25)]">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="./assets/enveewheels2.mp4" type="video/mp4">
+         </video>
+          </div>
+          <div class="md:7/12  lg:w-6/12">
+            <h2 class="mt-10 text-2xl text-green-900 hover:animate-bounce font-semibold font-mono md:text-4xl">Why choose us</h2>
+            <h1 class="mt-4 font-mono  text-gray-800">"<span>Designed in Bharat</span><br>
+              &nbsp;Engineered in Bharat."
+              </h1> 
+                                          <p class="mt-2 font-mono  text-gray-800">
+                                              &nbsp;Government Approved Electric Vehicles.
+                                              <br>
+                                              &nbsp;Phase 2 – AIS compliant batteries for safer rides
+                                              <br>
+                                              &nbsp;Low Cost Higher ROI Business model.
+                                              <br>
+                                              &nbsp;Full sales and after sales support.
+                                              <br>
+                                              &nbsp;Easy finance available on all models
+                                              <br>
+                                              &nbsp;Easy availability of spare parts. 
+              
+              
+                                          </p>
+            <br>
+            <button class="px-5 focus:outline-none rounded focus:ring-green-700 focus:ring-offset-2 focus:ring-2 text-white  tracking-tight py-4 text-lg leading-4 hover:bg-green-900 bg-green-700 border border-green-700    dark:hover:text-white"><a href='r&d.html'>See More</a></button>
+          </div>
+          
+          
+        </div>
+    </div>
+  </div>
+ 
+  <!-- component -->
+<style>
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.first-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.first-section h1 {
+    font-size: 2rem;
+}
+
+.second-section {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.service {
+    flex: 1;
+    text-align: center;
+    padding: 30px; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 20px; 
+    height: 200px;
+    width: 200px
+}
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+.green-bg {
+    background-color: rgb(20 83 45);
+}
+
+.third-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/* .apply-button {
+    padding: 20px 60px; 
+    font-size: 1rem;
+    background-color: darkgreen;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.apply-button:hover {
+    background-color: #a0d468;
+} */
+
+/* Responsive  */
+@media (max-width: 768px) {
+    .first-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .apply-button {
+        padding: 15px 40px;
+        font-size: 0.9rem;
+    }
+
+    .service {
+        flex: 1 1 calc(50% - 40px); 
+        padding: 20px; 
+        margin: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .first-section h1 {
+        font-size: 1.2rem;
+    }
+
+    .apply-button {
+        padding: 12px 30px; 
+        font-size: 0.8rem;
+    }
+
+    .service {
+        flex: 1 1 calc(100% - 40px); 
+        padding: 15px; 
+        margin: 10px; 
+    }
+}
+
+.far, .fa-lightbulb, .fa-landmark {
+  color: rgb(20 83 45);
+    font-size: 4rem;
+}
+
+.fa-battery-full, .fa-chart-simple, .fa-screwdriver-wrench {
+    color: white;
+    font-size: 4rem;
+}
+.fa-globe,.fa-shield{
+  color: rgb(20 83 45);
+    font-size: 4rem;
+}
+
+.fa-business-time,.fa-city{
+  color: white;
+  font-size: 4rem;
+}
+</style>
+<section class="m-5">
+  <div>
+  <h1 class="mb-8 text-center text-3xl hover:animate-bounce font-mono font-semibold text-green-700">Partner with Us</h1>
+
+  
+  <div class="second-section font-mono  ">
+    <div class="service white-bg">
+      <i class="far fa-check-circle " ></i>
+            <p>Government Approved Electric Vehicles.
+      </p>
+      
+    </div>
+    <div class="service green-bg font-mono ">
+      <i class="fa-solid fa-battery-full"></i>
+      <p class="text-white">Phase 2 – AIS compliant batteries for safer rides.
+      </p>
+      
+    </div>
+    <div class="service white-bg font-mono ">
+      <i class="fa-solid fa-lightbulb"></i>
+      <p >Low Cost Higher ROI Business model.
+      </p>
+    </div>
+    <div class="service green-bg font-mono ">
+      <i class="fa-solid fa-chart-simple"></i>
+      <p class="text-white">Full sales and after sales support.
+      </p>
+    </div>
+    <div class="service white-bg font-mono ">
+      <i class="fa-solid fa-landmark"></i>
+      <p>Easy finance available on all models
+      </p>
+    </div>
+    <div class="service green-bg font-mono ">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <p class="text-white">Easy availability of spare parts. 
+      </p>
+    </div>
+  </div>
+  
+  <!-- <div class="third-section">
+    <button class="apply-button"><a href="./dist.html">Apply for Dealership Now</a></button>
+  </div> -->
+  <br>
+  <div class="w-max  mx-auto">
+    <button class="focus:outline-none rounded focus:ring-green-800 focus:ring-offset-2 focus:ring-2 bg-green-900 text-white hover:text-gray-800 w-full tracking-tight py-4  px-4 text-lg leading-4 hover:bg-gray-300 hover:text-gray-800  border border-gray-800  dark:border-white "><a href="./dist.html">Apply for Dealership</a></button>
+  </div>
+</section>
+ 
+<div class="bg-white m-5 ">
+<div class="">
+  <h1 class="m-5 text-center text-3xl hover:animate-bounce font-mono font-semibold text-green-700">Our Products</h1>
+
+</div>
+<!-- component -->
+<div class="mx-auto container px-4 md:px-6 2xl:px-0 py-0 flex justify-start items-start">
+  
+
+ 
+    <div class="m-6 lg:mt-12 grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-10 lg:gap-y-0">
+      <div class="flex flex-col">
+        <div class="relative">
+          <img class="hidden lg:block" src="/assets/Bull007.png" alt="bike1" />
+          <img class="hidden sm:block lg:hidden" src="./bike1.jpg" alt="bike1" />
+          <img class="sm:hidden" src="./bike1.jpg" alt="bike1" />
+          
+        </div>
+        
+        
+      </div>
+
+      <div class="flex flex-col">
+        <div class="relative">
+          <img class="hidden lg:block" src="/assets/Neutral Minimalist Simple Elegant Marble Quote Instagram Post (2).png" alt="bike" />
+          <img class="hidden sm:block lg:hidden" src="./bike2.jpg" alt="bike" />
+          <img class="sm:hidden" src="./bike2.jpg" alt="bike" />
+         
+        </div>
+    
+      </div>
+
+      <div class="flex flex-col">
+        <div class="relative">
+          <img class="hidden lg:block" src="/assets/SurpriseEW.png" alt="bike3" />
+          <img class="hidden sm:block lg:hidden" src="bike3.jpg" alt="bike3" />
+          <img class="sm:hidden" src="bike3.jpg" alt="bike3" />
+         
+        </div>
+        
+
+
+    </div>
+
+  </div>
+</div>
+<div class="w-max  m-2 mx-auto ">
+  <button class="focus:outline-none rounded focus:ring-green-800 focus:ring-offset-2 focus:ring-2 bg-green-900 text-white hover:text-gray-800 w-full tracking-tight py-4  px-4 text-lg leading-4 hover:bg-gray-300 hover:text-gray-800  border border-gray-800  dark:border-white "><a href="models.html">See More</a></button>
+</div>
+
+</div>
+
+<section class="m-5">
+  <div>
+    <h1 class="m-20 text-center text-3xl hover:animate-bounce font-mono font-semibold text-green-700">The Ev Revolution is here</h1>
+
+  </div>
+  
+  <div class="second-section font-mono ">
+    <div class="service white-bg">
+      <i class="fa-solid fa-globe"></i>
+      <p>Government Supported Industry</p>
+      
+    </div>
+    <div class="service green-bg font-mono ">
+      <i class="fa-solid fa-business-time"></i>
+      <p class="text-white">Expected 50% CAGR over next % years</p>
+      
+    </div>
+    <div class="service white-bg font-mono ">
+      <i class="fa-solid fa-lightbulb"></i>
+      <p >Multiple Innovations</p>
+    </div>
+    <div class="service green-bg font-mono ">
+      <i class="fa-solid fa-chart-simple"></i>
+      <p class="text-white">Mass Acceptence</p>
+    </div>
+    <div class="service white-bg font-mono ">
+      <i class="fa-solid fa-shield"></i>
+      <p>Safer Products</p>
+    </div>
+    <div class="service green-bg font-mono ">
+      <i class="fa-solid fa-city"></i>
+      <p class="text-white">First Mover Advantage Still Open</p>
+    </div>
+  </div>
+  <div class="w-max  mx-auto">
+    <button class="focus:outline-none rounded focus:ring-green-800 focus:ring-offset-2 focus:ring-2 bg-green-900 text-white hover:text-gray-800 w-full tracking-tight py-4  px-4 text-lg leading-4 hover:bg-gray-300 hover:text-gray-800  border border-gray-800  dark:border-white "><a href="./dist.html">Apply for Dealership</a></button>
+  </div>
+</section>
+
+<div class="m-5  flex items-end w-full h-auto bg-White"></div>
+<footer class="mt-10 w-full text-gray-700 bg-gray-100 body-font">
+  <div class="container flex flex-col flex-wrap px-5 py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+      <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+          <a class="flex items-center justify-center text-2xl font-extrabold text-green-900 title-font md:justify-start">Envee Wheels</a>
+          <p class="mt-2 text-sm text-gray-500">Unleash the Power of Electric Freedom</p>
+          <div class="mt-4">
+              <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                  <a href="https://www.facebook.com/profile.php?viewas=100000686899395&amp;id=100095527869387" class="text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      
+                      </svg>
+                  </a>
+                  <a href="https://twitter.com/?logout=1693363765894" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                          </path>
+                      </svg>
+                  </a>
+                  <a href="https://instagram.com/envee_wheels_?utm_source=qr&amp;igshid=MzNlNGNkZWQ4Mg%3D%3D" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                    </a>
+                  <!-- <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path stroke="none"
+                              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                          </path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                  </a> -->
+              </span>
+          </div>
+      </div>
+      <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase font-mono  title-font">About</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-mono " href="#main">Company</a>
+                  </li>
+                  
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-mono " href="./blogs.html">Blog</a>
+                  </li>
+              </nav>
+          </div>
+          
+          
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase font-mono  title-font">Contact</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-mono " href="./c.html">Send a Message</a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="./dist.html" class="text-gray-500 cursor-pointer hover:text-gray-900 font-mono ">Request a Quote</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900 font-mono ">+91 9359098039</a>
+                  </li>
+              </nav>
+          </div>
+      </div>
+  </div>
+ <!-- component -->
+<div class="footer footer-center  w-full py-2 bg-green-500 text-gray-800">
+<div class="text-center">
+  <p>
+    Copyright © 2023 -Envee Wheels Limited All Rights Reserved
+   
+  </p>
+</div>
+</div>
+</footer>
+</div>
+
+  
+  
+</body>
+</html>

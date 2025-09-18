@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dealership.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dealership.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <script>
+        if(window.history.replaceState){
+            window.history.replaceState(null,null,window.location.href);
+        }
+    </script>
+
+</head>
+<body>
+    
+  <div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+    <div class="w-full text-gray-700  bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+      <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row items-center justify-between p-4">
+          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="h-16 w-auto" src="./assets/ev.png" alt=""></a>
+          <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-500 focus:outline-none focus:shadow-outline" href="./index.html">Home</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./about.html">About us</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./models.html">Models</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./R&D.html">R & D</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./booknow/index2.html">Book Now</a> 
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./dist.html">Partner with us</a>  
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./c.html">Contact Us</a> 
+          
+            
+        </nav>
+      </div>
+    </div>
+  </div>
+
+    <br>
+
+    <!-- Section 1: Showroom Images -->
+    <h2 class="text-center font-mono font-semibold text-2xl">Explore Virtual Showroom</h2>
+    
+<div class="md:5/12 mx-auto py-16    lg:w-5/12 ">
+    <a href="./assets/dealership.mp4"><img class="bg-cover" src="./assets/dist.jpeg" alt=""></a>
+  <br>
+  
+    <p class="font-mono text-xl">Click Image to Explore Virtual Showroom</p>
+</div>
+  
+
+
+
+
+
+    <!-- Section 2: Benefits of Joining Dealership -->
+    <section id="benefits">
+        <h2>Investment Opportunities</h2><br>
+        <p>
+            Envee Wheels Limited is a promising company with a bright future in the electric vehicle market. 
+            With our cutting-edge technology and commitment to sustainability, we are poised for long-term success.
+            Investing in Envee Wheels Limited offers the potential for strong returns and growth prospects.
+            Our financial data and projections demonstrate the potential for significant growth in the coming years.
+            By investing in Envee Wheels Limited, you can be a part of a company that is leading the way 
+            in environmentally friendly transportation and innovative technology.</p>
+        
+    </section>
+
+    <!-- Section 3: Dealership Application Form -->
+<section id="application">
+    <h2>Apply for Dealership</h2> <br>
+    <form action="#" method="post">
+        
+        <label for="interest" class="requried">I am Interested For:</label>
+        <select id="interest" name="interest" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="distributor">Distributor</option>
+            <option value="dealer">Dealer</option>
+        </select>
+        
+      
+        <label for="location" class="requried">Location:</label>
+        <select id="location" name="location" required>
+            <option value="" disabled selected>Select a state</option>
+        
+        </select>
+        
+        
+        <label for="investment" class="requried">Investment Capacity:</label>
+        <select id="investment" name="investment" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="upto_15">Upto 15 lakh</option>
+            <option value="upto_30">Upto 30 lakh</option>
+            <option value="upto_50">Upto 50 lakh</option>
+            <option value="above_50">Above 50 lakh</option>
+        </select>
+        
+        
+        <label for="occupation" class="requried">Current Occupation:</label>
+        <select id="occupation" name="occupation" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="self_employed">Self-Employed Professional</option>
+            <option value="employed">Employed</option>
+            <option value="business">Business</option>
+        </select>
+        
+        
+        <label for="turnover" class="requried">Current Turnover:</label>
+        <select id="turnover" name="turnover" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="upto_1_cr">Upto 1 cr</option>
+            <option value="upto_10_cr">Upto 10 cr</option>
+            <option value="above_10_cr">10 cr and above</option>
+        </select>
+        
+        
+        <label for="store_size" class="requried">I am Interested in Store Size:</label>
+        <select id="store_size" name="store_size" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="basic">Basic - 500 sq ft</option>
+            <option value="business">Business 1000 sq ft</option>
+            <option value="experience">Experience 2000 sq ft</option>
+        </select>
+        
+        
+        <label for="name" class="requried">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        
+        <label for="email" class="requried">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+        
+        
+        <label for="mobile" class="requried">Mobile No.:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+        
+        
+        <label for="address" class="requried">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+        <br>
+        
+        <button type="submit" id="joinButton" onclick="openpopup()" disabled>JOIN US</button>
+        
+    </form>
+</section><br><br>
+
+<div class="popup" id="popup">
+            <img src="tick.jpg">
+            <h2>Thank You!</h2>
+            <p>Your Details has been successfully Submitted . Thanks!</p>
+            <button type="button" onclick="closepopup()">OK</button>
+            
+            </div>
+
+
+
+    
+    <footer>
+        <!-- footer -->
+    </footer>
+
+    <script>
+        
+        const indianStates = [
+            "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+            "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
+            "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram",
+            "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana",
+            "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"
+        ];
+        
+        
+        const locationSelect = document.getElementById("location");
+        
+        
+        indianStates.forEach(state => {
+            const option = document.createElement("option");
+            option.value = state.toLowerCase().replace(/\s+/g, "_"); 
+            option.text = state;
+            locationSelect.appendChild(option);
+        });
+
+        
+    let popup=document.getElementById("popup");
+
+    function openpopup(){
+    popup.classList.add("open-popup");
+    }
+    function closepopup(){
+    popup.classList.remove("open-popup");
+    }
+
+    //  "Join Us" button disable / enable 
+const form = document.querySelector("form");
+const joinButton = document.getElementById("joinButton");
+
+// Function to check if all required fields are filled
+function checkFormValidity() {
+    const requiredFields = form.querySelectorAll("[required]");
+    let isFormValid = true;
+
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            isFormValid = false;
+        }
+    });
+
+    return isFormValid;
+}
+
+// Function to enable/disable the button based on form validity
+function updateJoinButton() {
+    if (checkFormValidity()) {
+        joinButton.removeAttribute("disabled");
+    } else {
+        joinButton.setAttribute("disabled", "true");
+    }
+}
+
+// Listen for input changes in the form fields
+form.addEventListener("input", updateJoinButton);
+
+        </script>
+        
+</body>
+</html>
+

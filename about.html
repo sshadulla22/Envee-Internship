@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    
+    <script src="https://kit.fontawesome.com/b23e0e833a.js" crossorigin="anonymous"></script>
+ <title> Envee Wheels</title>
+</head>
+<body>
+
+    <!-- component -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+
+<div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+  <div class="w-full text-gray-700  bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div class="flex flex-row items-center justify-between p-4">
+        <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="h-16 w-auto" src="./assets/ev.png" alt=""></a>
+        <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-500 focus:outline-none focus:shadow-outline" href="./index.html">Home</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./about.html">About us</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./models.html">Models</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./R&D.html">R & D</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./booknow/index2.html">Book Now</a> 
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./dist.html">Partner with us</a>  
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./c.html">Contact Us</a> 
+        
+          
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="py-16 bg-cover" >  
+    <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+         
+          <div class="md:7/12  lg:w-6/12">
+            <h2 class="text-2xl text-green-900 hover:animate-bounce font-semibold font-mono md:text-4xl">Our Story</h2>
+            <p class="mt-2 text-sm font-mono  text-black">Envee Wheels is a pioneering Indian enterprise in the electric scooter industry, positioned to thrive amidst the growing shift towards sustainable transportation.</br></br> With a strong emphasis on innovation, quality, and design, the company's in-house R&D and manufacturing facility in Maharashtra has propelled them to create the first government-approved 72V electric scooter in India's non RTO registered category.</br></br>Their mission to contribute to a greener environment and revolutionize the electric vehicle market is backed by collaborations with renowned research scientists and a vision to be listed as a Public Limited company by 2025. <br><br>
+
+                Envee Wheels' strategic focus on creating advanced, eco-friendly electric vehicles marks them as a player in the green mobility revolution. Their commitment to innovation and environmental consciousness, demonstrated by their pioneering 72V electric scooter and collaborations with research experts, positions them well for success as they aspire to list as a Public Limited company and shape the future of electric transportation in India and beyond.
+           
+          </div>
+          
+          <div class="md:5/12 lg:w-5/12">
+            <img src="./assets/bullabout.png" alt="image" loading="lazy" width="" height="">
+          </div>
+        </div>
+    </div>
+  </div>
+  
+   <div class=" m-8 bg-slate-200 flex flex-row justify-center gap-3">
+    <div class=" flex flex-col">
+        <h1 class=" font-mono text-black text-3xl font-semibold flex-start">Vision</h1>
+        <p class="mt-6 font-mono ">Being India’s most customer centric company
+             & making <br>electric vehicles is a first choice of every individual with <br>
+              innovation & affordable product manufacturing.</p>
+
+    </div>
+    <div class="w-[1px] h-18 bg-gray-200"></div>
+
+    <div class="flex flex-col">
+        <h1 class=" font-mono text-black text-3xl font-semibold flex-start">Mission</h1>
+        <p class="mt-6 font-mono ">To be a customer focus driven company with high quality,<br>
+             cost effective last mile connectivity products to all our end users <br>
+              by continuous addition of new features and comforts.</p>
+    </div>
+   </div>
+
+   <div class="mt-15 py-16 bg-white">  
+    <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+         
+          <div class="md:7/12  lg:w-6/12">
+            <h2 class="font-mono text-2xl text-green-900 hover:animate-bounce font-semibold font-mono md:text-4xl sm:text-2xl ">Our DNA</h2>
+            <p class="mt-6 font-mono text-gray-800">Purpose driven ideology with developing sustainable technologies in EV industry. <br><br>
+
+                The company's cutting-edge technology, unique design features, and commitment to quality set its electric vehicles apart, attracting a dedicated customer base.<br><br>
+                The company's strong focus on research and development drives continuous technological innovations. These advancements lead to improved performance, extended range, and enhanced safety features, making Envee Wheels a preferred choice among consumers.</p>
+            <!-- <p class="mt-4 text-gray-800">Customize your route for a unique experience, enjoy top-notch performance, and get all the assistance you need. Join us as we use Envee Wheels, where innovation and sustainability converge, to power a greener future.</p> -->
+          </div>
+            <div class="md:5/12 lg:w-5/12">
+                <img src="./assets/bullbike.jpeg" alt="image" loading="lazy" width="" height="">
+              </div>
+
+          </div>  
+        </div>
+    </div>
+  </div>
+
+
+
+  <div class="m-5  flex items-end w-full h-auto bg-White"></div>
+  <footer class="mt-10 w-full text-gray-700 bg-gray-100 body-font">
+    <div class="container flex flex-col flex-wrap px-5 py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+        <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+            <a class="flex items-center justify-center text-2xl font-extrabold text-green-900 title-font font-mono md:justify-start">Envee Wheels</a>
+            <p class="mt-2 text-sm font-mono text-gray-500">Unleash the Power of Electric Freedom</p>
+            <div class="mt-4">
+                <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                    <a href="https://www.facebook.com/profile.php?viewas=100000686899395&amp;id=100095527869387" class="text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/?logout=1693363765894" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/envee_wheels_?utm_source=qr&amp;igshid=MzNlNGNkZWQ4Mg%3D%3D" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                      </a>
+                    <!-- <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a> -->
+                </span>
+            </div>
+        </div>
+        <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+            <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                <h2 class="mb-3 text-sm font-medium tracking-widest font-mono text-gray-900 uppercase title-font">About</h2>
+                <nav class="mb-10 list-none">
+                    <li class="mt-3">
+                        <a class="text-gray-500 cursor-pointer font-mono hover:text-gray-900" href="#main">Company</a>
+                    </li>
+                    
+                    <li class="mt-3">
+                        <a class="text-gray-500 cursor-pointer font-mono hover:text-gray-900" href="./blogs.html">Blog</a>
+                    </li>
+                </nav>
+            </div>
+            
+            
+            <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                <h2 class="mb-3 text-sm font-medium tracking-widest font-mono text-gray-900 uppercase title-font">Contact</h2>
+                <nav class="mb-10 list-none">
+                    <li class="mt-3">
+                        <a class="text-gray-500 cursor-pointer font-mono hover:text-gray-900" href="./c.html">Send a Message</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="./dist.html" class="text-gray-500 font-mono cursor-pointer hover:text-gray-900">Request a Quote</a>
+                    </li>
+                    <li class="mt-3">
+                        <a class="text-gray-500 cursor-pointer font-mono hover:text-gray-900">+91 9359098039</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </div>
+   <!-- component -->
+  <div class="footer footer-center  w-full py-2 bg-green-500 text-gray-800">
+  <div class="text-center font-mono ">
+    <p>
+      Copyright © 2023 -Envee Wheels Limited All Rights Reserved
+     
+    </p>
+  </div>
+  </div>
+  </footer>
+  </div>
+  
+    
+  
+</body>
+</html>

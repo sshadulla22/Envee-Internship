@@ -1,0 +1,164 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+body {
+    background-color: #fffefe;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+
+section {
+    padding: 40px;
+}
+
+/* Section 1 styles */
+#showroom {
+    display: flex;
+    margin: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.showroom-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.showroom-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.showroom-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.showroom-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.showroom-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Section 2 styles */
+#benefits {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#benefits h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#benefits p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+/* SEction 3 styles */
+#application {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    
+}
+
+
+#application label,
+#application select,
+#application input,
+
+#application textarea {
+    margin-bottom: 15px;
+    
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    
+}
+
+
+select,
+input,
+textarea {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+button {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b2b6b4;
+}
+
+
+/* Company information styles */
+#company-info p {
+    line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+    
+    
+}

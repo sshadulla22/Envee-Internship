@@ -1,0 +1,246 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    text-shadow: 3px 2px 2px grey;
+    color: 	#333;
+}
+
+body {
+    background-color:#fdfeff;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+
+section {
+    padding: 40px;
+}
+
+/* Section 1 styles */
+
+
+.showroom-item {
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.showroom-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25% 10%;
+    transition: transform 0.3s ease;
+    
+}
+
+.showroom-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333	;
+    
+}
+
+.showroom-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.showroom-item:hover img {
+    transform: scale(1.25);
+}
+
+
+/* Section 2 styles */
+#benefits {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    box-shadow: #708090 0px 50px 100px -20px, 	#708090 0px 30px 60px -30px, #708090 0px -2px 6px 0px inset;
+
+}
+
+#video {
+    max-width: 500px;
+    height: 300px;
+    margin: 40px auto;
+    padding: 60px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    box-shadow: #708090 0px 50px 100px -20px, 	#708090 0px 30px 60px -30px, #708090 0px -2px 6px 0px inset;
+
+}
+
+#benefits h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+#benefits p {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+    line-height: 1.6;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+
+
+/* SEction 3 styles */
+#application {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    box-shadow: #708090 0px 50px 100px -20px, 	#708090 0px 30px 60px -30px, #708090 0px -2px 6px 0px inset;
+}
+
+#application h2{
+    font-family: 'Merriweather', serif;
+}
+
+
+#application label,
+#application select,
+#application input,
+
+#application textarea {
+    margin-bottom: 15px;
+    
+    
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+
+}
+
+
+select,
+input,
+textarea {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.requried::after{
+    content: " *";
+    color: red;
+}
+
+button {
+    text-align: center;
+    background-color: #00FF7F	;
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #28a754;
+}
+
+
+/* Company information styles */
+#company-info p {
+    line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+    
+    
+}
+
+
+/* For Thank You POP UP */
+
+.popup{
+    width:400px;
+    background:#fff;
+    border-radius: 25px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%) scale(0.1);
+    text-align:center;
+    padding: 0 30px 30px;
+    color:#333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    
+}
+
+.open-popup{
+    visibility: visible;
+    transform:translate(-50% , -50%) scale(1);
+}
+
+
+    .popup img{
+        width:100px;
+        margin-top:-50px;
+        border-radius:50%;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    }
+
+    .popup h2{
+        font-size:38px;
+        font-weight:500;
+        margin:30px 0 10px;
+    }
+
+    .popup button{
+        width:30%;
+        margin-top:50px;
+        padding:10px 0;
+        background: #6fd649;
+        color:#fff;
+        border:0;
+        outline:none;
+        font-size:15px;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    }

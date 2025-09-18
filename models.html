@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envee Wheels</title>
+    <link rel="stylesheet" href="./assets/contact/style.css">
+    <link rel="stylesheet" href="./assets/contact/responsive.css">
+    <link rel="stylesheet" href="./assets/contact/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/contact/bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+    <link rel="stylesheet" href="./assets/contact/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://kit.fontawesome.com/b23e0e833a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- component -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+
+<div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+  <div class="w-full text-gray-700  bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div class="flex flex-row items-center justify-between p-4">
+        <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="h-16 w-auto" src="./assets/ev.png" alt=""></a>
+        <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-500 focus:outline-none focus:shadow-outline" href="./index.html">Home</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./about.html">About us</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./models.html">Models</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./R&D.html">R & D</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./booknow/index2.html">Book Now</a> 
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./dist.html">Partner with us</a>  
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./c.html">Contact Us</a> 
+        
+          
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<!-- component -->
+
+
+
+<section class="bg-white  flex flex-col">
+  <div class="container  px-6 py-8 mx-auto">
+      <div class="lg:flex lg:-mx-2">
+          <div class="space-y-6 lg:w-1/5 lg:px-2  lg:space-y-6">
+              <a href="#" class="block font-medium text-gray-500 dark:text-gray-300 hover:underline font-mono  hover:text-green-700">Book a Test Drive</a>
+              <a href="./booknow/index.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:underline hover:text-green-700 font-mono ">Book Now</a>
+              <a href="./dist.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:underline  hover:text-green-700 font-mono " >Be a Dealer</a>
+              <a href="./dealerinfo.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:underline  hover:text-green-700 font-mono">Find a Dealer</a>
+
+              <a href="./moreinfo.pdf" class="block font-medium text-gray-500 dark:text-gray-300 hover:underline  hover:text-green-700 font-mono">Specifications</a>
+              <a href="#" class="block font-medium text-gray-500 dark:text-gray-300 hover:underline  hover:text-green-700 font-mono">Quick Start Guide</a>
+            </div>
+
+
+     
+          
+
+<div class="mx-auto container px-4 md:px-6 2xl:px-0 py-0 flex justify-start items-start">
+  
+    <!-- - more free and premium Tailwind CSS components at https://tailwinduikit.com/ - -->
+   
+      <div class="mt-0 lg:mt-12 grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-10 lg:gap-y-0">
+        <div class="flex flex-col">
+          <div class="relative">
+            <img class="hidden lg:block" src="./assets/Bull007.png" alt="bag" />
+            <img class="hidden sm:block lg:hidden" src="./bike1.jpg" alt="bag" />
+            <img class="sm:hidden" src="./bike1.jpg" alt="bag" />
+            <!-- <button aria-label="close" class="top-4 right-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 dark:bg-white dark:text-gray-800 absolute p-1.5 bg-gray-800 text-white hover:text-gray-400">
+              <svg class="fil-current" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 1L1 13" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1 1L13 13" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button> -->
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div class="flex justify-center items-center">
+              <p class="tracking-tight text-2xl font-semibold leading-6 text-gray-800 dark:text-white font-mono">BULL 007</p>
+            </div>
+            <div class="flex justify-center items-center">
+              <button aria-label="show menu" onclick="handleClick1(true)" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-700 py-2.5 px-2 bg-green-700 text-white hover:text-green-500 hover:bg-gray-200">                
+                <svg id="chevronUp1" class="hidden fill-stroke" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 5L5 1L1 5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg id="chevronDown1" class="fill-stroke" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="menu1" class="hidden flex flex-col jusitfy-start items-start mt-12">
+            <div>
+              <p class="mb-2 tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">Red Color</p>
+            </div>
+            <div class="mt-2">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Speed</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">Max 90 Kmph</p>
+            </div>
+            <div class="mt-6">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Batter Typey</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">Lipo4(Lithum Phosphate)</p>
+            </div>
+            <div class="mt-6">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Battery</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">60v, 24AH</p>
+            </div>
+            <div class="mt-6">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Load Capacity</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">150 KG</p>
+            </div>
+            <div class="flex jusitfy-between flex-col lg:flex-row items-center mt-10 w-full space-y-4 lg:space-y-0 lg:space-x-4 xl:space-x-8">
+              <div class="w-full">
+                <button class="focus:outline-none focus:ring-gray-800 focus:ring-offset-2 focus:ring-2 text-gray-800 dark:text-white text-white w-full tracking-tight py-4 text-lg leading-4 hover:bg-gray-300 hover:text-gray-800 dark:text-white bg-white border border-gray-800 dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-gray-800 dark:hover:text-white font-mono"><a href="./moreinfo.pdf">More info</a></button>
+              </div>
+              <div class="w-full">
+                <button class="focus:outline-none focus:ring-green-700 focus:ring-offset-2 focus:ring-2 text-white w-full tracking-tight py-4 text-lg leading-4 hover:bg-green-900 bg-green-700 border border-green-700    dark:hover:text-white font-mono"><a href="/booknow/index2.html">Book Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flex flex-col">
+          <div class="relative">
+            <img class="hidden lg:block" src="./assets/Neutral Minimalist Simple Elegant Marble Quote Instagram Post (2).png" alt="watch" />
+            <img class="hidden sm:block lg:hidden" src="./bike2.jpg" alt="watch" />
+            <img class="sm:hidden" src="./bike2.jpg" alt="watch" />
+            <!-- <button aria-label="close" class="top-4 right-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 dark:bg-white dark:text-gray-800 absolute p-1.5 bg-gray-800 text-white hover:text-gray-400">
+              <svg class="fil-current" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 1L1 13" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1 1L13 13" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button> -->
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div class="flex justify-center items-center">
+              <p class="tracking-tight text-2xl font-semibold leading-6 text-gray-800 dark:text-white font-mono">Pride Lite
+              </p>
+            </div>
+            <div class="flex justify-center items-center">
+              <button aria-label="show menu" onclick="handleClick2(true)" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-700 py-2.5 px-2 bg-green-700 text-white hover:text-green-500 hover:bg-gray-200">                
+                <svg id="chevronUp2" class="hidden fill-stroke" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 5L5 1L1 5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg id="chevronDown2" class="fill-stroke" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="menu2" class="hidden flex flex-col jusitfy-start items-start mt-12">
+            <div>
+              <p class="mb-2 tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">Red Color</p>
+            </div>
+            <div class="mt-2">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Speed</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">Max 45 Kmph</p>
+            </div>
+            <div class="mt-6">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Battery Type</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">Lip04(Lithum Phosphate)</p>
+            </div>
+            <div class="mt-6">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Battery Capacity</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">60v, 24AH</p>
+            </div>
+
+            <div class="mt-6">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Load Capacity</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">200 KG</p>
+            </div>
+            <div class="flex jusitfy-between flex-col lg:flex-row items-center mt-10 w-full space-y-4 lg:space-y-0 lg:space-x-4 xl:space-x-8">
+              <div class="w-full">
+                <button class="focus:outline-none focus:ring-gray-800 focus:ring-offset-2 focus:ring-2 text-gray-800 dark:text-white text-white w-full tracking-tight py-4 text-lg leading-4 hover:bg-gray-300 hover:text-gray-800 dark:text-white bg-white border border-gray-800 dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-gray-800 dark:hover:text-white font-mono"><a href="./moreinfo.pdf">More info</a></button>
+              </div>
+              <div class="w-full">
+                <button class="focus:outline-none focus:ring-green-700 focus:ring-offset-2 focus:ring-2 text-white w-full tracking-tight py-4 text-lg leading-4 hover:bg-green-900 bg-green-700 border border-green-700    dark:hover:text-white font-mono"><a href="booknow/book.html">Book Now</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flex flex-col">
+          <div class="relative">
+            <img class="hidden lg:block" src="./assets/SurpriseEW.png" alt="shoes" />
+            <img class="hidden sm:block lg:hidden" src="bike3.jpg" alt="shoes" />
+            <img class="sm:hidden" src="bike3.jpg" alt="shoes" />
+            <!-- <button aria-label="close" class="top-4 right-4 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:bg-white dark:text-gray-800 focus:ring-gray-800 absolute p-1.5 bg-gray-800 text-white hover:text-gray-400">
+              <svg class="fil-current" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 1L1 13" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1 1L13 13" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button> -->
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div class="flex justify-center items-center">
+              <p class="tracking-tight text-2xl font-semibold leading-6 text-gray-800 dark:text-white font-mono">Surprise</p>
+            </div>
+            <div class="flex justify-center items-center">
+              <button aria-label="show menu" onclick="handleClick3(true)" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-700 py-2.5 px-2 bg-green-700 text-white hover:text-green-500 hover:bg-gray-200">
+                <svg id="chevronUp3" class="hidden fill-stroke" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 5L5 1L1 5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg id="chevronDown3" class="fill-stroke" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="menu3" class="hidden flex flex-col jusitfy-start items-start mt-12">
+            <div>
+              <p class="mb-2 tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">White Color</p>
+            </div>
+            <div class="mt-2">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Speed</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">Max 45 Kmph</p>
+            </div>
+            <div class="mt-6">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Battery Type</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">Lipo4(Lithium Phosphate)</p>
+            </div>
+            <div class="mt-6">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Battery</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">48V 24AH</p>
+            </div>
+            <div class="mt-6">
+              <p class="tracking-tight text-xs leading-3 text-gray-800 dark:text-white font-mono">Load Capacity</p>
+              <p class="tracking-tight text-base font-medium leading-4 text-gray-800 dark:text-white font-mono">200 KG</p>
+            </div>
+            <div class="flex jusitfy-between flex-col lg:flex-row items-center mt-10 w-full space-y-4 lg:space-y-0 lg:space-x-4 xl:space-x-8">
+              <div class="w-full">
+                <button class="focus:outline-none focus:ring-gray-800 focus:ring-offset-2 focus:ring-2 text-gray-800 dark:text-white text-white w-full tracking-tight py-4 text-lg leading-4 hover:bg-gray-300 hover:text-gray-800 dark:text-white bg-white border border-gray-800 dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-gray-800 dark:hover:text-white font-mono"><a href="./moreinfo.pdf">More info</a></button>
+              </div>
+              <div class="w-full">
+                <button class="focus:outline-none focus:ring-green-700 focus:ring-offset-2 focus:ring-2 text-white w-full tracking-tight py-4 text-lg leading-4 hover:bg-green-900 bg-green-700 border border-green-700  dark:hover:text-white font-mono"><a href="./booknow/book.html">Book Now</a></button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+  <script>
+  // more free and premium Tailwind CSS components at https://tailwinduikit.com/
+  handleClick1 = (flag) => {
+    let icon = document.getElementById("chevronDown1");
+    let icon2 = document.getElementById("chevronUp1");
+    let menu = document.getElementById("menu1");
+    if (flag) {
+      menu.classList.toggle("hidden");
+      icon.classList.toggle("hidden");
+      icon2.classList.toggle("hidden");
+    }
+  };
+  
+  handleClick2 = (flag) => {
+    let icon = document.getElementById("chevronDown2");
+    let icon2 = document.getElementById("chevronUp2");
+    let menu = document.getElementById("menu2");
+    if (flag) {
+      menu.classList.toggle("hidden");
+      icon.classList.toggle("hidden");
+      icon2.classList.toggle("hidden");
+    }
+  };
+  
+  handleClick3 = (flag) => {
+    let icon = document.getElementById("chevronDown3");
+    let icon2 = document.getElementById("chevronUp3");
+    let menu = document.getElementById("menu3");
+    if (flag) {
+      menu.classList.toggle("hidden");
+      icon.classList.toggle("hidden");
+      icon2.classList.toggle("hidden");
+    }
+  };
+  </script>
+
+
+       
+<div class="m-5  flex items-end w-full h-auto bg-White"></div>
+<footer class="mt-10 w-full text-gray-700 bg-gray-100 body-font">
+  <div class="container flex flex-col flex-wrap px-5 py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+      <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+          <a class="flex items-center justify-center text-2xl font-extrabold text-green-900 title-font md:justify-start font-mono">Envee Wheels</a>
+          <p class="mt-2 text-sm text-gray-500 font-mono">Unleash the Power of Electric Freedom</p>
+          <div class="mt-4">
+              <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                  <a href="https://www.facebook.com/profile.php?viewas=100000686899395&amp;id=100095527869387" class="text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      
+                      </svg>
+                  </a>
+                  <a href="https://twitter.com/?logout=1693363765894" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                          </path>
+                      </svg>
+                  </a>
+                  <a href="https://instagram.com/envee_wheels_?utm_source=qr&amp;igshid=MzNlNGNkZWQ4Mg%3D%3D" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                    </a>
+                  <!-- <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path stroke="none"
+                              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                          </path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                  </a> -->
+              </span>
+          </div>
+      </div>
+      <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900" href="#main">Company</a>
+                  </li>
+                  
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900" href="./blogs.html">Blog</a>
+                  </li>
+              </nav>
+          </div>
+          
+          
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900" href="./c.html">Send a Message</a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="./dist.html" class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">+91 9359098039</a>
+                  </li>
+              </nav>
+          </div>
+      </div>
+  </div>
+ <!-- component -->
+<div class="footer footer-center  w-full py-2 bg-green-500 text-gray-800">
+<div class="text-center">
+  <p>
+    Copyright © 2023 -Envee Wheels Limited All Rights Reserved
+   
+  </p>
+</div>
+</div>
+</footer>
+</div>
+
+  
+
+
+</body>
+</html>

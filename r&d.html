@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+    <title>Envee Wheels</title>
+</head>
+<body>
+    <!-- component -->
+    <div class="overflow-x-hidden">
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+<div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+    <div class="w-full text-gray-700  bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+      <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row items-center justify-between p-4">
+          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="h-16 w-auto" src="./assets/ev.png" alt=""></a>
+          <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-500 focus:outline-none focus:shadow-outline" href="./index.html">Home</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./about.html">About us</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./models.html">Models</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./R&D.html">R & D</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./booknow/index2.html">Book Now</a> 
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./dist.html">Partner with us</a>  
+          <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./c.html">Contact Us</a> 
+          
+            
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+<div class="py-16 bg-white overflow-hidden">  
+    <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+          <div class="md:5/12 lg:w-5/12">
+<img src="./assets/r&d.jpeg" alt="">
+        </div>
+          <div class="md:7/12 lg:w-6/12">
+            <h2 class="text-2xl text-green-600 hover:animate-bounce font-semibold font-mono md:text-4xl">Envee Wheels Limited</h2>
+            <p class="mt-6 font-mono text-gray-600">Innovative Technology
+                Envee Wheels is at the forefront of electric vehicle technology, with a strong commitment to innovation and staying ahead of the competition. Our advanced battery systems allow for longer ranges and faster charging times, while our autonomous driving features provide a safer and more efficient driving experience.
+                Our team of engineers and designers are constantly pushing the boundaries of what's possible, developing new technologies that will revolutionize the electric vehicle market. From software updates that improve performance to hardware upgrades that enhance safety, Envee Wheels is dedicated to delivering cutting-edge solutions that exceed customer expectations.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <circle cx="50.1" cy="30.4" r="5" class="stroke-primary" style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"></circle>
+  <line x1="55.1" y1="30.4" x2="100" y2="30.4" class="stroke-primary" style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+  <line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary" style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+</svg>
+</header>
+
+<!-- component -->
+<div id="services" class="  section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white">
+    <div class="container xl:max-w-6xl mx-auto px-4">
+        <!-- Heading start -->
+        <header class="text-center mx-auto mb-12 lg:px-20">
+            <h2 class="text-4xl leading-normal mb-2 font-bold font-mono text-green-800">What We Do</h2>
+            
+        </header>
+        <!-- End heading -->
+        <!-- row -->
+        <div class="flex flex-wrap flex-row -mx-4 text-center">
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                        </svg> -->
+                    </div>
+                    <h3 class="text-lg leading-normal mb-2 font-semibold font-mono text-black">EV Manufacturing</h3>
+                    <p class="text-gray-500 font-mono "> development, and manufacturing of electric vehicles.</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-chat-square-dots" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
+                            <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                        </svg> -->
+                    </div>
+                    <h3 class="text-lg leading-normal mb-2 font-mono font-semibold text-black">Battery Technology and Production</h3>
+                    <p class="text-gray-500 font-mono">Advanced battery technology.</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-badge-ad" viewBox="0 0 16 16">
+                            <path d="M3.7 11l.47-1.542h2.004L6.644 11h1.261L5.901 5.001H4.513L2.5 11h1.2zm1.503-4.852l.734 2.426H4.416l.734-2.426h.053zm4.759.128c-1.059 0-1.753.765-1.753 2.043v.695c0 1.279.685 2.043 1.74 2.043.677 0 1.222-.33 1.367-.804h.057V11h1.138V4.685h-1.16v2.36h-.053c-.18-.475-.68-.77-1.336-.77zm.387.923c.58 0 1.002.44 1.002 1.138v.602c0 .76-.396 1.2-.984 1.2-.598 0-.972-.449-.972-1.248v-.453c0-.795.37-1.24.954-1.24z"></path>
+                            <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"></path>
+                        </svg> -->
+                    </div>
+                    <h3 class="text-lg font-mono leading-normal mb-2 font-semibold text-black">Software and Connectivity</h3>
+                    <p class="text-gray-500 font-mono ">Developing and maintaining the software that powers these features is a significant aspect of EV company operations.</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"></path>
+                            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"></path>
+                        </svg> -->
+                    </div>
+                    <h3 class="text-lg font-mono leading-normal mb-2 font-semibold text-black">Sales and Marketing</h3>
+                    <p class="text-gray-500 font-mono">Setting up dealerships,advertising, advertising and developing marketing campaigns.</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                            <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"></path>
+                        </svg> -->
+                    </div>
+                    <h3 class="text-lg leading-normal font-mono mb-2 font-semibold text-black">Research and Development</h3>
+                    <p class="text-gray-500 font-mono">Development and improve vehicle performance, safety, energy efficiency, and cost-effectiveness..</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"></path>
+                        </svg> -->
+                    </div>
+                    <h3 class="text-lg leading-normal mb-2 font-semibold text-black font-mono">Charging Infrastructure</h3>
+                    <p class="text-gray-500 font-mono">Building and expanding charging infrastructure is crucial for the success of electric vehicles..</p>
+                </div>
+                <!-- end service block -->
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+</div>
+                <!-- end service block -->
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+</div>
+
+
+
+<div class="m-5  flex items-end w-full h-auto bg-White"></div>
+<footer class="mt-10 w-full text-gray-700 bg-gray-100 body-font">
+  <div class="container flex flex-col flex-wrap px-5 py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+      <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+          <a class="flex items-center font-mono justify-center text-2xl font-extrabold text-green-900 title-font md:justify-start">Envee Wheels</a>
+          <p class="mt-2 text-sm text-gray-500 font-mono">Unleash the Power of Electric Freedom</p>
+          <div class="mt-4">
+              <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                  <a href="https://www.facebook.com/profile.php?viewas=100000686899395&amp;id=100095527869387" class="text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      
+                      </svg>
+                  </a>
+                  <a href="https://twitter.com/?logout=1693363765894" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                          </path>
+                      </svg>
+                  </a>
+                  <a href="https://instagram.com/envee_wheels_?utm_source=qr&amp;igshid=MzNlNGNkZWQ4Mg%3D%3D" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                    </a>
+                  <!-- <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path stroke="none"
+                              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                          </path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                  </a> -->
+              </span>
+          </div>
+      </div>
+      <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900" href="#main">Company</a>
+                  </li>
+                  
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900" href="./blogs.html">Blog</a>
+                  </li>
+              </nav>
+          </div>
+          
+          
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900" href="./c.html">Send a Message</a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="./dist.html" class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">+91 9359098039</a>
+                  </li>
+              </nav>
+          </div>
+      </div>
+  </div>
+ <!-- component -->
+<div class="footer footer-center  w-full py-2 bg-green-500 text-gray-800">
+<div class="text-center">
+  <p>
+    Copyright © 2023 -Envee Wheels Limited All Rights Reserved
+   
+  </p>
+</div>
+</div>
+</footer>
+</div>    
+  
+  
+
+  
+</body>
+</html>

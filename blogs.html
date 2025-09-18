@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://kit.fontawesome.com/b23e0e833a.js" crossorigin="anonymous"></script>
+ <title> Envee Wheels</title>
+</head>
+<body>
+ <!-- component -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+ 
+<div class="antialiased bg-gray-100 dark-mode:bg-gray-900">
+  <div class="w-full text-gray-700  bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div class="flex flex-row items-center justify-between p-4">
+        <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><img class="h-16 w-auto" src="./assets/ev.png" alt=""></a>
+        <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-500 focus:outline-none focus:shadow-outline" href="./index.html">Home</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./about.html">About us</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./models.html">Models</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./R&D.html">R & D</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./book.html">Book Now</a> 
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./dist.html">Partner with us</a>  
+        <a class="px-4 py-2 mt-2 text-sm font-semibold font-sans bg-transparent rounded-lg  md:mt-0 md:ml-4  hover:bg-green-600 focus:bg-green-600 focus:outline-none focus:shadow-outline" href="./c.html">Contact Us</a> 
+        
+          
+      </nav>
+    </div>
+  </div>
+</div>
+<!--start here-->
+<section class="text-gray-600 font-mono body-font">
+  <div class="container px-5 py-5 mx-auto">
+    <div class="flex flex-wrap -m-4">
+<div class="p-4 md:w-1/3" >
+    <div class="h-full border-2 border-green-800  border-opacity-200 rounded-lg overflow-hidden">
+        <div class="w-full">
+            <div class="w-full flex p-2">
+                <div class="p-2 ">
+                  <img 
+                    src="assets/ev.png" alt="author" 
+                    class="w-10 h-10 rounded-full overflow-hidden"/>
+                </div>
+                <div class="pl-2 pt-2 ">
+                  <p class="font-bold">Envee Wheels</p>
+                  <p class="text-xs">2 June 2023</p>
+                </div>
+              </div>
+        </div>
+        
+      
+      <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets/b1img.jpeg" alt="blog cover"/>
+      
+      <div class="p-4">
+        <h1 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Electric Scooters and Bikes in
+            India: An In-Depth Economic
+            Analysis</h1>
+
+        <div class="flex items-center flex-wrap ">
+          <a href="assets/blog1.pdf" class="text-green-900  md:mb-2 lg:mb-0">
+            <p class="inline-flex items-center">Read Blog
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </p>
+          </a>
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="p-4 md:w-1/3" >
+    <div class="h-full border-2 border-green-800 border-opacity-200 rounded-lg overflow-hidden">
+        <div class="w-full">
+            <div class="w-full flex p-2">
+                <div class="p-2 ">
+                  <img 
+                    src="assets/ev.png" alt="author" 
+                    class="w-10 h-10 rounded-full overflow-hidden"/>
+                </div>
+                <div class="pl-2 pt-2 ">
+                  <p class="font-bold">Envee Wheels</p>
+                  <p class="text-xs">2 June 2023</p>
+                </div>
+              </div>
+        </div>
+        
+      
+      <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets/b2img.jpeg" alt="blog cover"/>
+      
+      <div class="p-4">
+        <h1 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">ELECTRIC VEHICLE MYTHS AND FACTS</h1>
+       
+        <div class="flex items-center flex-wrap ">
+          <a href="assets/blog2.pdf" class="text-green-900  md:mb-2 lg:mb-0">
+            <p class="inline-flex items-center">Read Blog
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </p>
+          </a>
+         
+         
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="p-4 md:w-1/3" >
+    <div class="h-full border-2 border-green-800 border-opacity-200 rounded-lg overflow-hidden">
+        <div class="w-full">
+            <div class="w-full flex p-2">
+                <div class="p-2 ">
+                  <img 
+                    src="assets/ev.png" alt="author" 
+                    class="w-10 h-10 rounded-full overflow-hidden"/>
+                </div>
+                <div class="pl-2 pt-2 ">
+                  <p class="font-bold">Envee Wheels</p>
+                  <p class="text-xs">2 June 2022</p>
+                </div>
+              </div>
+        </div>
+        
+      
+      <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets/b3img.jpeg" alt="blog cover"/>
+      
+      <div class="p-4">
+        <h1 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Autonomous Features in Electric
+            Bikes and Scooters: Driving into a
+            Smart and Sustainable Future</h1>
+       
+        <div class="flex items-center flex-wrap ">
+          <a href="assets/blog3.pdf" class="text-green-900  md:mb-2 lg:mb-0">
+            <p class="inline-flex items-center">Read Blog
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </p>
+          </a>
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!--End here-->
+
+<!--start here-->
+<section class="text-gray-600 font-mono body-font">
+  <div class="container px-5 py-5 mx-auto">
+    <div class="flex flex-wrap -m-4">
+<div class="p-4 md:w-1/3" >
+    <div class="h-full border-2 border-green-800  border-opacity-200 rounded-lg overflow-hidden">
+        <div class="w-full">
+            <div class="w-full flex p-2">
+                <div class="p-2 ">
+                  <img 
+                    src="assets/ev.png" alt="author" 
+                    class="w-10 h-10 rounded-full overflow-hidden"/>
+                </div>
+                <div class="pl-2 pt-2 ">
+                  <p class="font-bold">Envee Wheels</p>
+                  <p class="text-xs">2 June 2023</p>
+                </div>
+              </div>
+        </div>
+        
+      
+      <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets/8.jpeg" alt="blog cover"/>
+      
+      <div class="p-4">
+        <h1 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Environment Benefits of Electric Vehicals:
+          Reducing Your Carbon Footprint on the Road
+        </h1>
+
+        <div class="flex items-center flex-wrap ">
+          <a href="assets/blog 4.pdf" class="text-green-900  md:mb-2 lg:mb-0">
+            <p class="inline-flex items-center">Read Blog
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </p>
+          </a>
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="p-4 md:w-1/3" >
+    <div class="h-full border-2 border-green-800 border-opacity-200 rounded-lg overflow-hidden">
+        <div class="w-full">
+            <div class="w-full flex p-2">
+                <div class="p-2 ">
+                  <img 
+                    src="assets/ev.png" alt="author" 
+                    class="w-10 h-10 rounded-full overflow-hidden"/>
+                </div>
+                <div class="pl-2 pt-2 ">
+                  <p class="font-bold">Envee Wheels</p>
+                  <p class="text-xs">2 June 2023</p>
+                </div>
+              </div>
+        </div>
+        
+      
+      <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets/9.jpeg" alt="blog cover"/>
+      
+      <div class="p-4">
+        <h1 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">The Evolution of Battery Technology in Electric Vehicles</h1>
+       
+        <div class="flex items-center flex-wrap ">
+          <a href="assets/blog6.pdf" class="text-green-900  md:mb-2 lg:mb-0">
+            <p class="inline-flex items-center">Read Blog
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </p>
+          </a>
+         
+         
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="p-4 md:w-1/3" >
+    <div class="h-full border-2 border-green-800 border-opacity-200 rounded-lg overflow-hidden">
+        <div class="w-full">
+            <div class="w-full flex p-2">
+                <div class="p-2 ">
+                  <img 
+                    src="assets/ev.png" alt="author" 
+                    class="w-10 h-10 rounded-full overflow-hidden"/>
+                </div>
+                <div class="pl-2 pt-2 ">
+                  <p class="font-bold">Envee Wheels</p>
+                  <p class="text-xs">2 June 2022</p>
+                </div>
+              </div>
+        </div>
+        
+      
+      <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets/10.jpeg" alt="blog cover"/>
+      
+      <div class="p-4">
+        <h1 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">DEMYSTIFYING ELECTRIC VEHICLES: A BEGINNER'S GUIDE TO EV TECHNOLOGY
+            </h1>
+       
+        <div class="flex items-center flex-wrap ">
+          <a href="assets/blog10.pdf" class="text-green-900  md:mb-2 lg:mb-0">
+            <p class="inline-flex items-center">Read Blog
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </p>
+          </a>
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!--End here-->
+
+<!--start here-->
+<section class="text-gray-600 font-mono body-font">
+  <div class="container px-5 py-5 mx-auto">
+    <div class="flex flex-wrap -m-4">
+
+  
+  <div class="p-4 md:w-1/3" >
+    <div class="h-full border-2 border-green-800 border-opacity-200 rounded-lg overflow-hidden">
+        <div class="w-full">
+            <div class="w-full flex p-2">
+                <div class="p-2 ">
+                  <img 
+                    src="assets/ev.png" alt="author" 
+                    class="w-10 h-10 rounded-full overflow-hidden"/>
+                </div>
+                <div class="pl-2 pt-2 ">
+                  <p class="font-bold">Envee Wheels</p>
+                  <p class="text-xs">2 June 2022</p>
+                </div>
+              </div>
+        </div>
+        
+      
+      <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="assets/11.jpeg" alt="blog cover"/>
+      
+      <div class="p-4">
+        <h1 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">CHARGING AHEAD: NAVIGATING THE ELECTRIC VEHICLE CHARGING INFRASTRUCTURE
+      </h1>
+       
+        <div class="flex items-center flex-wrap ">
+          <a href="assets/blog7.pdf" class="text-green-900  md:mb-2 lg:mb-0">
+            <p class="inline-flex items-center">Read Blog
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </p>
+          </a>
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!--End here-->
+
+
+<div class="m-5  flex items-end w-full h-auto bg-White"></div>
+<footer class="mt-10 w-full text-gray-700 bg-gray-100 body-font">
+  <div class="container flex flex-col flex-wrap px-5 py-10 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+      <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+          <a class="flex items-center justify-center text-2xl font-extrabold text-green-900 title-font md:justify-start">Envee Wheels</a>
+          <p class="mt-2 text-sm text-gray-500">Unleash the Power of Electric Freedom</p>
+          <div class="mt-4">
+              <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                  <a href="https://www.facebook.com/profile.php?viewas=100000686899395&amp;id=100095527869387" class="text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      
+                      </svg>
+                  </a>
+                  <a href="https://twitter.com/?logout=1693363765894" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                          </path>
+                      </svg>
+                  </a>
+                  <a href="https://instagram.com/envee_wheels_?utm_source=qr&amp;igshid=MzNlNGNkZWQ4Mg%3D%3D" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700" target="_blank">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                    </a>
+                  <!-- <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path stroke="none"
+                              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                          </path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                  </a> -->
+              </span>
+          </div>
+      </div>
+      <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900" href="#main">Company</a>
+                  </li>
+                  
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900" href="./blogs.html">Blog</a>
+                  </li>
+              </nav>
+          </div>
+          
+          
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+              <nav class="mb-10 list-none">
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900" href="./c.html">Send a Message</a>
+                  </li>
+                  <li class="mt-3">
+                      <a href="./dist.html" class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
+                  </li>
+                  <li class="mt-3">
+                      <a class="text-gray-500 cursor-pointer hover:text-gray-900">+91 9359098039</a>
+                  </li>
+              </nav>
+          </div>
+      </div>
+  </div>
+ <!-- component -->
+<div class="footer footer-center  w-full py-2 bg-green-500 text-gray-800">
+<div class="text-center">
+  <p>
+    Copyright © 2023 -Envee Wheels Limited All Rights Reserved
+   
+  </p>
+</div>
+</div>
+</footer>
+</div>
+
+</body>
+</html>
