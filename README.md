@@ -5,11 +5,12 @@
   Showcasing the launch of <b>BULL 007</b> with online booking & modern design.
 </p>
 
-<button align="center">
+<p align="center">
   <a href="https://envee-intern.netlify.app" target="_blank">
-    🌐 Visit Website
+    <img src="https://img.shields.io/badge/🌐 Visit%20Website-blue?style=for-the-badge&logo=google-chrome" alt="Website Link"/>
   </a>
-</button>
+</p>
+
 
 ---
 
@@ -56,4 +57,5 @@
   <a href="https://www.linkedin.com/in/sshadulla22" target="_blank">💼 LinkedIn</a> •
   <a href="https://github.com/sshadulla22" target="_blank">👨‍💻 GitHub</a>
 </p>
+
 
